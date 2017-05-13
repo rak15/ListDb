@@ -15,7 +15,7 @@ public class Main2Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
         lv=(ListView)findViewById(R.id.listView);
-        data=new Data(Main2Activity.this,"Table",null,1);
+        data=new Data(Main2Activity.this);
         db=data.getReadableDatabase();
         Cursor c=db.rawQuery("Select * from Test",null);
         c.moveToFirst();
